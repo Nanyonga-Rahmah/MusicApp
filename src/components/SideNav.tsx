@@ -1,0 +1,36 @@
+import React from "react";
+import SideNavButton from "./SideNavButton";
+
+import { SideBarItems } from "@/lib/types";
+import Link from "next/link";
+
+interface SideBarDesktopProps {
+  SideNavItems: SideBarItems;
+}
+
+function SideNav(props: SideBarDesktopProps) {
+  return (
+    <>
+    <aside className="col-span-1 bg-gray-700 h-screen max-w-xs  border-r ">
+      <div className="h-full p-4">
+        <h3 className="mx-3 text-lg font-semibold text-foreground">MusicApp</h3>
+        <div className="mt-5">
+          <div className="flex flex-col gap-1 w-full">
+            {props.SideNavItems.links.map((link, index) => (
+                <Link key={index} href={link.href}>
+                  <SideNavButton 
+              icon={link.icon} className="w-full">{link.label}</SideNavButton>
+                </Link>
+            
+            ))}
+            {props.SideNavItems.extras}
+          </div>
+        </div>
+      </div>
+    </aside>
+   
+     </>
+  );
+}
+
+export default SideNav;
