@@ -78,13 +78,13 @@ function Home() {
             <div className="px-20 pt-4">
                 <Button variant="outline" className="bg-blue-400 border">NEW ALBUM</Button>
                 <h3 className="mt-10 mb-2 font-bold text-sm uppercase">God Never Fails</h3>
-                <p className="font-medium">Experience a vibrant journey of emotions with this captivating music album.Each Track unfolds a unique story</p>
+                <p className="text-sm">Experience a vibrant journey of emotions with this captivating music album.Each Track unfolds a unique story</p>
                 <div className="flex justify-between my-5">
                     <span>23 Songs</span>
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
-            <div className="object-cover"><Image src='/background.png' className="translate-y-12" width={900} height={400} alt="pesron"/></div>
+            <div className="object-cover"><Image src='/background.png' className="translate-y-8" width={900} height={400} alt="pesron"/></div>
         </div>
 
         <div className=" mt-5">
@@ -94,7 +94,7 @@ function Home() {
             </div>
             <div className="grid grid-cols-4 gap-4 ">
                 {releases.map((release,index)=>(
-                    <div key={index} className="w-[200px] h-[300px] bg-gray-900 rounded-lg text-white overflow-hidden">
+                    <div key={index} className="w-[200px] h-[300px] bg-gray-900 rounded-lg text-white overflow-hidden mr-2">
                         <div className="object-fill h-[200px] mb-2"><Image src={release.image} width={200} height={200} alt='artist'/></div>
                         <div className=" text-sm px-3">{release.title}</div>
                         <div  className="flex justify-between my-3 text-sm  px-3">
