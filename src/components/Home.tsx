@@ -84,7 +84,7 @@ function Home() {
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
-            <div className=" bg-contain bg-center w-full  bg-hero-background "></div>
+            <div className=" bg-contain  bg-center w-full bg-no-repeat  bg-hero-background "></div>
         </div>
 
         <div className=" mt-5">
@@ -92,7 +92,7 @@ function Home() {
                 <span className="text-white font-bold text-xl">New Releases</span>
                 <span className="text-blue-700"><Link href='/'>See All</Link></span>
             </div>
-            <div className="flex gap-2 ">
+            <div className="flex  ">
                 {releases.map((release,index)=>(
                     <div key={index} className="w-[200px] h-[300px] bg-gray-900 rounded-lg text-white overflow-hidden mr-2">
                         <div className="object-fill h-[200px] mb-2"><Image src={release.image} width={200} height={200} alt='artist'/></div>
