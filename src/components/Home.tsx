@@ -79,8 +79,8 @@ function Home() {
                 <Button variant="outline" className="bg-blue-400 border">NEW ALBUM</Button>
                 <h3 className="mt-5 mb-2 font-bold text-sm uppercase">God Never Fails</h3>
                 <p className="text-sm">Experience a vibrant journey of emotions with this captivating music album.Each Track unfolds a unique story</p>
-                <div className="flex justify-between my-2">
-                    <span>23 Songs</span>
+                <div className="flex justify-between my-2 text-sm">
+                    <span >23 Songs</span>
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
