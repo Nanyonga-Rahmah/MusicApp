@@ -11,7 +11,7 @@ interface SideBarDesktopProps {
 function SideNav(props: SideBarDesktopProps) {
   return (
     <>
-    <aside className="col-span-1 h-screen bg-gray-700 max-w-xs  border-r ">
+    <aside className="col-span-1 h-[842px] bg-gray-700 max-w-xs  border-r ">
       <div className="h-full p-4">
         <h3 className="mx-3 text-lg font-semibold text-foreground">MuzikApp</h3>
         <div className="mt-5">
