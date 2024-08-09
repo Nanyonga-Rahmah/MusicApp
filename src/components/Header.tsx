@@ -7,7 +7,7 @@ import Link from 'next/link'
 
 function Header() {
   return (
-    <div className='flex justify-between bg-black col-span-5 p-4 h-min '>
+    <div className='flex justify-between bg-gray-700 col-span-5 p-4 h-min '>
         <Search/>
 
         <div className='flex gap-3'>
