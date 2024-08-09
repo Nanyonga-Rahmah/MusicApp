@@ -1,10 +1,8 @@
-'use client'
-import React from 'react'
+"use client";
+import React from "react";
 
 function LoginPage() {
-  return (
-    <div className='text-white'>LoginPage</div>
-  )
+  return <div className="text-white">LoginPage Coming Soon</div>;
 }
 
-export default LoginPage
+export default LoginPage;

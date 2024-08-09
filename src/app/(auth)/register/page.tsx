@@ -2,7 +2,7 @@ import React from 'react'
 
 function RegisterPage() {
   return (
-    <div className='Register'>RegisterPage</div>
+    <div className='Register'>RegisterPage Coming Soon</div>
   )
 }
 
