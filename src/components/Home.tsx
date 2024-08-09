@@ -77,7 +77,7 @@ function Home() {
         <div className="flex bg-conic-gradient from-blue-500 via-blue-200 to-blue-500 rounded-xl overflow-hidden  text-white">
             <div className="px-20 pt-4">
                 <Button variant="outline" className="bg-blue-400 border">NEW ALBUM</Button>
-                <h3 className="mt-10 mb-2 font-bold text-sm uppercase">God Never Fails</h3>
+                <h3 className="mt-5 mb-2 font-bold text-sm uppercase">God Never Fails</h3>
                 <p className="text-sm">Experience a vibrant journey of emotions with this captivating music album.Each Track unfolds a unique story</p>
                 <div className="flex justify-between my-2">
                     <span>23 Songs</span>
