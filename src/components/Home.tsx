@@ -84,7 +84,7 @@ function Home() {
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
-            <div className=" bg- bg-center w-full  bg-hero-background "></div>
+            <div className=" bg-cover bg-center w-full  bg-hero-background "></div>
         </div>
 
         <div className=" mt-5">
