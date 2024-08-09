@@ -13,7 +13,7 @@ function SideNav(props: SideBarDesktopProps) {
     <>
     <aside className="col-span-1 bg-gray-700 h-screen max-w-xs  border-r ">
       <div className="h-full p-4">
-        <h3 className="mx-3 text-lg font-semibold text-foreground">MusicApp</h3>
+        <h3 className="mx-3 text-lg font-semibold text-foreground">MuzikApp</h3>
         <div className="mt-5">
           <div className="flex flex-col gap-1 w-full">
             {props.SideNavItems.links.map((link, index) => (
