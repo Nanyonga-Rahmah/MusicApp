@@ -12,7 +12,7 @@ function SideNav(props: SideBarDesktopProps) {
   return (
     <>
     <aside className="col-span-1 min-h-screen bg-gray-700 max-w-xs  border-r ">
-      <div className="h-full p-4">
+      <div className="h-screen p-4">
         <h3 className="mx-3 text-lg font-semibold text-foreground">MuzikApp</h3>
         <div className="mt-5">
           <div className="flex flex-col gap-1 w-full">
