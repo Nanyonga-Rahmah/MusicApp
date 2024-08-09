@@ -55,6 +55,7 @@ const config = {
       },
       backgroundImage: {
         "hero-pattern": "url('/album.jpeg')",
+        "hero-background": "url('/background.png')",
         "conic-gradient":
           "conic-gradient(from 0deg at 50% 50%, var(--tw-gradient-stops))",
       },
