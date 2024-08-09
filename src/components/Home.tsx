@@ -84,7 +84,7 @@ function Home() {
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
-            <div className="object-cover h-full w-full "></div>
+            <div className="object-cover h-[210px] w-full border "><Image src='/background.png' className="translate-y-3"  width={800} height={210} alt="pesron"/></div>
         </div>
 
         <div className=" mt-5">
