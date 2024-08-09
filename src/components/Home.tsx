@@ -92,7 +92,7 @@ function Home() {
                 <span className="text-white font-bold text-xl">New Releases</span>
                 <span className="text-blue-700"><Link href='/'>See All</Link></span>
             </div>
-            <div className="grid md:grid-cols-4 gap-4 ">
+            <div className="flex gap-5 ">
                 {releases.map((release,index)=>(
                     <div key={index} className="w-[200px] h-[300px] bg-gray-900 rounded-lg text-white overflow-hidden mr-2">
                         <div className="object-fill h-[200px] mb-2"><Image src={release.image} width={200} height={200} alt='artist'/></div>
