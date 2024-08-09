@@ -8,7 +8,7 @@ import { DownloadIcon } from "lucide-react";
 const releases=[
     {
         image:"/Ruth.jpg",
-        title:"Mixed Feelings",
+        title:"Mixed Signals",
         artist:"Ruth B",
         duration:"2:30"
     },
@@ -20,7 +20,7 @@ const releases=[
     },
     {
         image:"/Ruth.jpg",
-        title:"Mixed Feelings",
+        title:"Mixed Signals",
         artist:"Ruth B",
         duration:"2:30"
     },
@@ -34,7 +34,7 @@ const releases=[
 const played=[
     {
         image:"/Ruth.jpg",
-        title:"Mixed Feelings",
+        title:"Mixed Signals",
         artist:"Ruth B",
         duration:"2:30"
     },
@@ -46,7 +46,7 @@ const played=[
     },
     {
         image:"/Ruth.jpg",
-        title:"Mixed Feelings",
+        title:"Mixed Signals",
         artist:"Ruth B",
         duration:"2:30"
     },
@@ -58,7 +58,7 @@ const played=[
     },
     {
         image:"/Ruth.jpg",
-        title:"Mixed Feelings",
+        title:"Mixed Signals",
         artist:"Ruth B",
         duration:"2:30"
     },
@@ -84,7 +84,7 @@ function Home() {
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
-            <div className=" bg-contain  bg-center w-full bg-no-repeat  bg-hero-background "></div>
+            <div className=" bg-cover  bg-center w-full bg-no-repeat  bg-hero-background "></div>
         </div>
 
         <div className=" mt-5">
@@ -94,10 +94,10 @@ function Home() {
             </div>
             <div className="flex  ">
                 {releases.map((release,index)=>(
-                    <div key={index} className="w-[200px] h-[300px] bg-gray-900 rounded-lg text-white overflow-hidden mr-2">
-                        <div className="object-fill h-[200px] mb-2"><Image src={release.image} width={200} height={200} alt='artist'/></div>
+                    <div key={index} className="w-[200px] h-[220px] bg-gray-900 rounded-lg text-white overflow-hidden mr-2">
+                        <div className="object-cover overflow-clip h-[130px] mb-2"><Image src={release.image} width={200} height={200} alt='artist'/></div>
                         <div className=" text-sm px-3">{release.title}</div>
-                        <div  className="flex justify-between my-3 text-sm  px-3">
+                        <div  className="flex justify-between mt-4 text-sm  px-3 ">
                             <span>{release.artist}</span>
                             <span>{release.duration}</span>
                         </div>
