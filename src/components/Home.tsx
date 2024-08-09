@@ -74,7 +74,7 @@ function Home() {
   return (
     <div className='  h-screen grid grid-cols-5 p-4 bg-black '>
      <div className="col-span-3 p-5  ">
-        <div className="flex bg-conic-gradient from-blue-500 via-blue-200 to-blue-500 rounded-xl h-[290px] text-white">
+        <div className="flex bg-conic-gradient from-blue-500 via-blue-200 to-blue-500 rounded-xl  text-white">
             <div className="px-20 pt-4">
                 <Button variant="outline" className="bg-blue-400 border">NEW ALBUM</Button>
                 <h3 className="mt-10 mb-2 font-bold text-sm uppercase">God Never Fails</h3>
@@ -84,7 +84,7 @@ function Home() {
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
-            <div className="object-cover"><Image src='/background.png' className="translate-y-8" width={900} height={400} alt="pesron"/></div>
+            <div className="object-cover"><Image src='/background.png'  width={900} height={400} alt="pesron"/></div>
         </div>
 
         <div className=" mt-5">
@@ -92,7 +92,7 @@ function Home() {
                 <span className="text-white font-bold text-xl">New Releases</span>
                 <span className="text-blue-700"><Link href='/'>See All</Link></span>
             </div>
-            <div className="grid grid-cols-4 gap-4 ">
+            <div className="grid md:grid-cols-4 gap-4 ">
                 {releases.map((release,index)=>(
                     <div key={index} className="w-[200px] h-[300px] bg-gray-900 rounded-lg text-white overflow-hidden mr-2">
                         <div className="object-fill h-[200px] mb-2"><Image src={release.image} width={200} height={200} alt='artist'/></div>
