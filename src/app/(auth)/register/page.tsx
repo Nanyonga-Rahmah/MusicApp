@@ -1,8 +1,18 @@
+import { RegisterForm } from '@/components/Forms/SignUp'
 import React from 'react'
+import AuthLayout from '../layout'
 
 function RegisterPage() {
   return (
-    <div className='Register'>RegisterPage Coming Soon</div>
+  <div className=' w-screen flex justify-center items-center '>
+      <RegisterForm/>
+  </div>
+
+   
+ 
+        
+      
+   
   )
 }
 
