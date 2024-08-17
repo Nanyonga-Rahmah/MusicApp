@@ -35,13 +35,15 @@ const NavItems: SideBarItems = {
 export default function LandingPage() {
   return (
     <>
+  
       <SideNav SideNavItems={NavItems} />
-     <div className="w-full col-span-5">
+     <div className="w-full col-span-5 ">
      <Header />
      <Home/>
      </div>
      
     <Footer />
+   
     </>
   );
 }

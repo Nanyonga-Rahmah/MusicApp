@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-       <body className='grid grid-cols-6 h-screen overflow-y-scroll '>{children}</body>
+       <body className='grid grid-cols-6 min-h-screen overflow-y-auto  min-w-full overflow-x-hidden'>{children}</body>
     </html>
   );
 }

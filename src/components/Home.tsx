@@ -72,10 +72,10 @@ const played=[
 
 function Home() {
   return (
-    <div className='  h-screen grid grid-cols-5 p-4 bg-black '>
+    <div className='  h-screen md:grid grid-cols-5 md:p-4 bg-black  '>
      <div className="col-span-3 p-5  ">
         <div className="flex bg-conic-gradient from-blue-500 via-blue-200 to-blue-500 rounded-xl overflow-hidden  text-white">
-            <div className="px-20 pt-4">
+            <div className="md:px-20 pt-4  ">
                 <Button variant="outline" className="bg-blue-400 border">NEW ALBUM</Button>
                 <h3 className="mt-5 mb-2 font-bold text-sm uppercase">God Never Fails</h3>
                 <p className="text-sm">Experience a vibrant journey of emotions with this captivating music album.Each Track unfolds a unique story</p>
@@ -92,7 +92,7 @@ function Home() {
                 <span className="text-white font-bold text-xl">New Releases</span>
                 <span className="text-blue-700"><Link href='/'>See All</Link></span>
             </div>
-            <div className="flex  ">
+            <div className="grid gap-5 items-center justify-center md:flex ">
                 {releases.map((release,index)=>(
                     <div key={index} className="w-[200px] h-[220px] bg-gray-900 rounded-lg text-white overflow-hidden mr-2">
                         <div className="object-cover overflow-clip h-[130px] mb-2"><Image src={release.image} width={200} height={200} alt='artist'/></div>
@@ -107,12 +107,14 @@ function Home() {
             </div>
         </div>
         <div className="mt-3">
-            <h3 className="text-white font-bold text-xl">Popular Songs</h3>
+            <h3 className="text-white font-bold text-xl my-4">Popular Songs</h3>
+        <div className="px-10">
         <TableDemo/>
         </div>
+        </div>
      </div>
-     <div className="flex flex-col col-span-2 pl-10 pr-20 py-2 text-white bg-gray-950">
-     <h3 className="text-white font-bold">Most Played</h3>
+     <div className="flex flex-col col-span-2 justify-center px-10 text-white">
+     <h3 className="text-white font-bold mt-4">Most Played</h3>
         <div className="w-full my-5">
          
             {played.map((release,index)=>(

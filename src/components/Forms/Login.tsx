@@ -26,7 +26,7 @@ const FormSchema = z.object({
   password: z.string().min(2, { message: "Password must be at least 2 characters",}),
 })
 
-export function RegisterForm() {
+export function LoginForm() {
   const form = useForm<z.infer<typeof FormSchema>>({
     resolver: zodResolver(FormSchema),
     defaultValues: {
@@ -45,12 +45,12 @@ export function RegisterForm() {
         <div className="brand border-4 rounded-full p-2"><Music4Icon/></div>
         <span className="mt-2 mx-2">GdMuzik</span></div>
       <div className="mb-4">
-        <h3 className="mt-2 text-2xl font-bold">Create  Account </h3>
-        <span className="text-[18px] my-2">Already have an Account? <Link href='/login' className="text-blue-600">Login</Link></span>
+        <h3 className="mt-2 text-2xl font-bold">Welcome Back </h3>
+        <span className="text-[18px] my-2">Don't have an Account? <Link href='/register' className="text-blue-600">Create one here</Link></span>
       </div>
 
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full space-y-6">
+      <form onSubmit={form.handleSubmit(onSubmit)} className="w-full ">
         <FormField
           control={form.control}
           name="email"
@@ -58,7 +58,7 @@ export function RegisterForm() {
           render={({ field }) => (
             <FormItem>
               
-              <div className="flex border px-2 rounded-md">
+              <div className="flex border px-2 rounded-md my-6">
                 <FormLabel className="mt-2"><MailIcon/></FormLabel>
               <FormControl>
                 <Input placeholder="Email" {...field} className="border-none outline-none bg-black" />
@@ -76,7 +76,7 @@ export function RegisterForm() {
           render={({ field }) => (
             <FormItem>
            
-           <div className="flex border px-2 rounded-md">
+           <div className="flex border px-2 rounded-md mt-6">
                 <FormLabel className="mt-2"><LockIcon/></FormLabel>
               <FormControl>
                 <Input placeholder="Password" {...field} className="border-none outline-none bg-black" />
@@ -88,9 +88,11 @@ export function RegisterForm() {
             </FormItem>
           )}
         />
-        <Button type="submit" className="w-full bg-blue-800 text-[16px]">Register</Button>
+         <div className="flex justify-end mt-2 mb-4 "><Link href='/'  className="text-blue-600 mt-0">Forgot Password?</Link></div>
+        <Button type="submit" className="w-full bg-blue-800 text-[16px]">Login</Button>
       </form>
     </Form>
+   
     </div>
   )
 }
