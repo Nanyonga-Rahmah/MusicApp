@@ -46,7 +46,7 @@ export function LoginForm() {
         <span className="mt-2 mx-2">GdMuzik</span></div>
       <div className="mb-4">
         <h3 className="mt-2 text-2xl font-bold">Welcome Back </h3>
-        <span className="text-[18px] my-2">Don't have an Account? <Link href='/register' className="text-blue-600">Create one here</Link></span>
+        <span className="text-[18px] my-2">Don&apos;t have an Account? <Link href='/register' className="text-blue-600">Create one here</Link></span>
       </div>
 
     <Form {...form}>
