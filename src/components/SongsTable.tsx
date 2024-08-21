@@ -36,7 +36,7 @@ import Image from "next/image"
   
   export function TableDemo() {
     return (
-      <Table className="text-white border">
+      <Table className="text-white border z-0">
       
        
         <TableBody>

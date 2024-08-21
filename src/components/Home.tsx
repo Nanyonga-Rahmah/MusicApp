@@ -74,17 +74,17 @@ function Home() {
   return (
     <div className='  h-screen md:grid grid-cols-5 md:p-4 bg-black  '>
      <div className="col-span-3 p-5  ">
-        <div className="flex bg-conic-gradient from-blue-500 via-blue-200 to-blue-500 rounded-xl overflow-hidden  text-white">
-            <div className="md:px-20 pt-4  ">
+        <div className="grid grid-rows-2 md:flex flex-row bg-conic-gradient from-blue-500 via-blue-200 to-blue-500 rounded-xl text-white">
+            <div className="order-last md:order-first md:px-20 pt-4 flex flex-col justify-center items-center md:items-start  ">
                 <Button variant="outline" className="bg-blue-400 border">NEW ALBUM</Button>
                 <h3 className="mt-5 mb-2 font-bold text-sm uppercase">God Never Fails</h3>
-                <p className="text-sm">Experience a vibrant journey of emotions with this captivating music album.Each Track unfolds a unique story</p>
-                <div className="flex justify-between my-2 text-sm">
+                <p className="text-sm px-4 md:px-0">Experience a vibrant journey of emotions with this captivating music album.Each Track unfolds a unique story</p>
+                <div className="flex justify-between my-2 text-sm text-right">
                     <span >23 Songs</span>
                     <span>56 Minutes 23 Seconds</span>
                 </div>
             </div>
-            <div className=" bg-cover  bg-center w-full bg-no-repeat  bg-hero-background overflow-hidden"></div>
+            <div className=" bg-cover  bg-center w-full bg-no-repeat  bg-hero-background  "></div>
         </div>
 
         <div className=" mt-5">
@@ -108,7 +108,7 @@ function Home() {
         </div>
         <div className="mt-3">
             <h3 className="text-white font-bold text-xl my-4">Popular Songs</h3>
-        <div className="px-10">
+        <div className="px-10 ">
         <TableDemo/>
         </div>
         </div>
